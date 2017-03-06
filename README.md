@@ -1,3 +1,5 @@
+_[Demo and API Docs](http://collaborne.github.io/paper-pulsating-progress)_
+
 # paper-pulsating-progress
 Polymer element that shows three pulsating icons to indicate loading progress
 
