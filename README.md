@@ -3,6 +3,8 @@ _[Demo and API Docs](http://collaborne.github.io/paper-pulsating-progress)_
 # paper-pulsating-progress
 Polymer element that shows three pulsating icons to indicate loading progress
 
+![Screenshot: Pulsating progress](/doc/screenshot.png "Screenshot: Pulsating progress")
+
 To use this element:
 
 `bower install paper-pulsating-progress`
