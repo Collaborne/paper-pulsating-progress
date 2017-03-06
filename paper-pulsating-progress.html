@@ -1,0 +1,80 @@
+<!doctype html>
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-icon/iron-icon.html">
+<link rel="import" href="../iron-icons/iron-icons.html">
+<link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
+
+<!--
+This elements shows a loading indicator that is pulsating when being active.
+
+@demo demo/index.html
+-->
+<dom-module id="paper-pulsating-progress">
+
+	<template>
+
+		<style>
+			:host {
+				@apply(--layout-horizontal);
+				display: block;
+				text-align: center;
+
+				/* Block height even if plus icons are not visible to avoid
+				   the design from jumping as they get visible */
+				height: 24px;
+			}
+			@-webkit-keyframes fadeInAndOut {
+				0% {
+					opacity: 1;
+				}
+
+				50% {
+					opacity: 0.3;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+			:host:not([active]) .plus {
+				display: none;
+			}
+			:host[active] .plus {
+				animation: fadeInAndOut .75s ease-in-out infinite;
+				color: var(--paper-pulsating-progress-color, green);
+			}
+			:host[active] .plus-2 {
+				animation-delay: .25s;
+			}
+			:host[active] .plus-3 {
+				animation-delay: .5s;
+			}
+		</style>
+
+		<iron-icon icon="icons:add" class="plus plus-1"></iron-icon>
+		<iron-icon icon="icons:add" class="plus plus-2"></iron-icon>
+		<iron-icon icon="icons:add" class="plus plus-3"></iron-icon>
+	</template>
+</dom-module>
+
+<script>
+
+(function() {
+
+	Polymer({
+		is: 'paper-pulsating-progress',
+		properties: {
+			/**
+			 * True if the icons are visible and pulsating
+			 */
+			active: {
+				type: Boolean,
+				value: false,
+				reflectToAttribute: true
+			}
+		}
+	});
+
+})();
+
+</script>
