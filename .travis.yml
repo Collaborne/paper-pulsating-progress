@@ -23,3 +23,5 @@ script:
 after_success: '[ ${TRAVIS_PULL_REQUEST} = "false" ] && [ ${TRAVIS_BRANCH} = "master"
   ] && $(npm bin)/bower install -s https://github.com/Polymer/tools.git
   && mkdir gh-pages && cd gh-pages && ../bower_components/tools/bin/gp.sh collaborne paper-pulsating-progress'
+env:
+  secure: QPZFz3uEn4AExulCcz128gErB8zmVd9PyRMqcCp+oYe0/k2QpMyWUVXlK+BRz66Ij7hJkXPQywnbn+0Q9kp+lNc4Nl2LhVtv/Kn/ml08joPb83EFppwUgfEGS10EfqdRVTaEwchNR63rP3jZWuAkNKGq5K5hiE2xQH/EXVII/jjE0ctAgAu0+sSFgaCeMrXXnRDoO0SbelAj7hIOnO7u2XOMhOdKkHgx+9AcMAfSJoAQVce/OIsECAowqMPchK9K0vB3FsyOaw8/V9akQlgz5czLLJaG17HqOBrIps8fJen26543FgyfmU4siOR0AhPoXDWMN0U2rc1WLp5M7F04sIR3kjywItCN3Qb2o8S15aYytLjjTRcxO/TgS8EcyWf8JLcMbK6pQJCvpjBkRvyAxoTduC/tiRErBygqBmwNz1E29RnVqrKRkviqN67Si45kQuprY/XEcXMWEu4/aRHC/RTOFNobqgQqWTG0gvhsXJcSgA/i+meEWFud7uTBxMn6pF50UpksIJqH9ZNCmHu+/wlsta/ixEmotHkWTpb+Rcd0aCHDfQY1Bph/CWBXd/4sP34AMwDRLBNEu5FiVVgBmEGF/XQ0myzvOFtzqDnX0yu3V3RUma2MN0/t09wXtIic0tXIwDkT43X2DN69kT8VkamTiL1B0ZAbmQ0mBEyS+lw=
