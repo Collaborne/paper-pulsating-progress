@@ -16,7 +16,6 @@ This elements shows a loading indicator that is pulsating when being active.
 		<style>
 			:host {
 				@apply(--layout-horizontal);
-				display: block;
 				text-align: center;
 
 				/* Block height even if plus icons are not visible to avoid
@@ -36,17 +35,18 @@ This elements shows a loading indicator that is pulsating when being active.
 					opacity: 1;
 				}
 			}
-			:host:not([active]) .plus {
+			:host .plus {
 				display: none;
 			}
-			:host[active] .plus {
+			:host([active]) .plus {
+				display: block;
 				animation: fadeInAndOut .75s ease-in-out infinite;
 				color: var(--paper-pulsating-progress-color, green);
 			}
-			:host[active] .plus-2 {
+			:host([active]) .plus-2 {
 				animation-delay: .25s;
 			}
-			:host[active] .plus-3 {
+			:host([active]) .plus-3 {
 				animation-delay: .5s;
 			}
 		</style>
@@ -78,3 +78,4 @@ This elements shows a loading indicator that is pulsating when being active.
 })();
 
 </script>
+
