@@ -11,15 +11,17 @@
 
 	<body>
 		<demo-snippet>
-			<template is="dom-bind">
-				<paper-pulsating-progress active="[[active]]"></paper-pulsating-progress>
-				<paper-checkbox checked="{{active}}">Active</paper-checkbox>
-			</template>
+			<dom-bind>
+				<template>
+					<paper-pulsating-progress active="[[active]]"></paper-pulsating-progress>
+					<paper-checkbox checked="{{active}}">Active</paper-checkbox>
+				</template>
 
-			<script>
-				const scope = document.querySelector('template[is=dom-bind]');
-				scope.active = true;
-			</script>
+				<script>
+					const scope = document.querySelector('dom-bind');
+					scope.active = true;
+				</script>
+			</dom-bind>
 		</demo-snippet>
 	</body>
 </html>
