@@ -16,25 +16,18 @@ This elements shows a loading indicator that is pulsating when being active.
 
 		<style>
 			:host {
-				@apply(--layout-horizontal);
+				@apply --layout-horizontal;
 				text-align: center;
 
 				/* Block height even if plus icons are not visible to avoid
 				   the design from jumping as they get visible */
 				height: 24px;
 			}
-			@-webkit-keyframes fadeInAndOut {
-				0% {
-					opacity: 1;
-				}
 
-				50% {
-					opacity: 0.3;
-				}
-
-				100% {
-					opacity: 1;
-				}
+			@keyframes fadeInAndOut {
+				0%   { opacity: 1.0; }
+				50%  { opacity: 0.3; }
+				100% { opacity: 1.0; }
 			}
 			:host .plus {
 				display: none;
@@ -71,9 +64,9 @@ This elements shows a loading indicator that is pulsating when being active.
 			active: {
 				type: Boolean,
 				value: false,
-				reflectToAttribute: true
-			}
-		}
+				reflectToAttribute: true,
+			},
+		},
 	});
 
 })();
