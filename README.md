@@ -1,14 +1,25 @@
-_[Demo and API Docs](http://collaborne.github.io/paper-pulsating-progress)_
-
-# paper-pulsating-progress
+# paper-pulsating-progress [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Collaborne/paper-pulsating-progress)
 Polymer element that shows three pulsating icons to indicate loading progress
-
-![Screenshot: Pulsating progress](/doc/screenshot.png "Screenshot: Pulsating progress")
 
 To use this element
 
 ```bash
 bower install paper-pulsating-progress
+```
+
+<!--
+```
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="paper-pulsating-progress.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<paper-pulsating-progress active></paper-pulsating-progress>
 ```
 
 
