@@ -11,17 +11,25 @@
 
 	<body>
 		<demo-snippet>
-			<dom-bind>
-				<template>
-					<paper-pulsating-progress active="[[active]]"></paper-pulsating-progress>
-					<paper-checkbox checked="{{active}}">Active</paper-checkbox>
-				</template>
+			<template>
+				<dom-bind>
+					<template>
+						<style>
+							paper-pulsating-progress {
+								--paper-pulsating-progress-color: red;
+							}
+						</style>
 
-				<script>
-					const scope = document.querySelector('dom-bind');
-					scope.active = true;
-				</script>
-			</dom-bind>
+						<paper-pulsating-progress active="[[active]]"></paper-pulsating-progress>
+						<paper-checkbox checked="{{active}}">Active</paper-checkbox>
+					</template>
+
+					<script>
+						const scope = document.querySelector('dom-bind');
+						scope.active = true;
+					</script>
+				</dom-bind>
+			</template>
 		</demo-snippet>
 	</body>
 </html>
