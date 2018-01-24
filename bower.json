@@ -22,7 +22,8 @@
     "polymer": "Polymer/polymer#^2.0.0",
     "iron-icon": "PolymerElements/iron-icon#^2.0.0",
     "iron-icons": "PolymerElements/iron-icons#^2.0.0",
-    "iron-validator-behavior": "PolymerElements/iron-flex-layout#^2.0.0"
+    "iron-validator-behavior": "PolymerElements/iron-flex-layout#^2.0.0",
+    "iron-test-helpers": "PolymerElements/iron-test-helpers#^2.0.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^2.0.0",
