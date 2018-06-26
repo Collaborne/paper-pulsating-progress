@@ -1,4 +1,8 @@
 # paper-pulsating-progress [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Collaborne/paper-pulsating-progress)
+
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/Collabornepaper-pulsating-progress)
+[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/Collabornepaper-pulsating-progress.svg)](https://vaadin.com/directory/component/Collabornepaper-pulsating-progress)
+
 Polymer element that shows three pulsating icons to indicate loading progress
 
 To use this element
